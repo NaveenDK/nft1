@@ -18,8 +18,8 @@ const Header = () => {
             <input className='searchInput' placeholder='Collection, Item or User...'/>
         </div>
         <div className="headerItems">
-            <p>Education</p>
-            <p>Etherium</p>
+            <p>AI</p>
+            <p>Data Science</p>
             <p>Covid19</p>
         </div>
 
