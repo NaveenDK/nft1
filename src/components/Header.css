@@ -70,3 +70,7 @@ margin:10px;
     border-radius:50px;
     color:black;
 }
+.headerItems {
+    display: flex;
+    margin-left: auto!Important;
+}

@@ -1,6 +1,6 @@
 import React from 'react'
 import './Header.css'
-import punkLogo from '../assets/header/cryptopunk-logo.png';
+import punkLogo from '../assets/header/neuralogov2.png';
 import searchIcon from   '../assets/header/search.png';
 import themeSwitchIcon from '../assets/header/theme-switch.png'
 
@@ -13,10 +13,12 @@ const Header = () => {
 
         
         <div className="headerItems">
+     
             <p>Tutorials</p>
             <p>Healthcare AI</p>
             <p>Covid-19</p>
             <p>Crypto & NFTS</p>
+         
         </div>
 
         <div className="headerActions">
