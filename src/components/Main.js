@@ -1,13 +1,14 @@
 import React from 'react'
 import './Main.css'
 import {useState,useEffect} from 'react';
-const Main = ({selectedPost,postData}) => {
+const Main = ({selectedPost,posts}) => {
 
-    const[activePost,setActivePost] =useState(postData[0])
+    const[activePost,setActivePost] =useState(posts[0])
+    console.log("activePost ", activePost)
 
     useEffect(()=>{
-      setActivePost(postData[selectedPost])
-    },[postData,selectedPost])
+      setActivePost(posts[selectedPost])
+    },[posts,selectedPost])
   
 
 
@@ -18,7 +19,7 @@ const Main = ({selectedPost,postData}) => {
                     <div className='postContainer'>
                     <img 
                     className='selectedPost'
-                    src= {activePost.imageSrc}
+                    src= {activePost.featuredImage.url}
                     alt=''
                     />
                 </div>

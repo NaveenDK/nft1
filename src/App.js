@@ -20,18 +20,18 @@ const postData = [
 function App() {
 
  const [selectedPost,setSelectedPost] = useState(0);
+ const [posts, setPosts] = useState([]);
 
- const [posts, setPosts] = useState(null);
-console.log("print posts " , posts)
+
  useEffect(() => {
    const fetchPosts = async () => {
      const { posts } = await request(
-       'https://api-ap-southeast-2.graphcms.com/v2/ckxmzqv8r4uz101z0cdnj6roi/master',
+       'https://api-ap-southeast-2.graphcms.com/v2/ckxo1np9m5kw601xpccps4lrn/master',
        `
      { 
        posts {
          id
-      title
+         title
          slug
          excerpt
          featuredImage
@@ -42,7 +42,7 @@ console.log("print posts " , posts)
      }
    `
      );
-
+     console.log("print posts " , posts)
      setPosts(posts);
    };
 
@@ -52,9 +52,9 @@ console.log("print posts " , posts)
   return ( <div className='app'>
     <Header/>
     {
-      postData.length>0 && (<>
-        <Main postData={postData} selectedPost={selectedPost}/>
-        <PostList postData={postData} setSelectedPost={setSelectedPost} />
+      posts.length>0 && (<>
+        {/* <Main posts={posts} selectedPost={selectedPost}/>   */}
+        <PostList posts={posts} setSelectedPost={setSelectedPost} />
         </>
       )
     }
