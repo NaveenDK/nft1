@@ -7,6 +7,8 @@ import placeholderImage from './assets/header/featured01.jpg';
 import PostList from './components/PostList';
 import Main from './components/Main';
 import { request } from 'graphql-request';
+import { BrowserRouter as Router,Route,Switch } from 'react-router-dom';
+import Post from './components/Post';
 
 
 const postData = [
@@ -49,18 +51,28 @@ function App() {
    fetchPosts();
  }, []);
 
-  return ( <div className='app'>
-    <Header/>
-    {
-      posts.length>0 && (<>
-        {/* <Main posts={posts} selectedPost={selectedPost}/>   */}
-        <PostList posts={posts} setSelectedPost={setSelectedPost} />
-        </>
-      )
-    }
+  return (
+    <Router>
+      <div className='app'>
+        
+      <Header/>
+      
 
-  
-  </div>
+    <Switch>
+      <Route exact path='/'>{
+        posts.length>0 && (<>
+          {/* <Main posts={posts} selectedPost={selectedPost}/>   */}
+          <PostList posts={posts} setSelectedPost={setSelectedPost} />
+          </>
+        )
+
+      } </Route>
+       <Route path='/posts/:slug'> 
+           <Post posts={posts} /> 
+      </Route>
+      </Switch>
+    </div>
+  </Router>
   )
 }
 
