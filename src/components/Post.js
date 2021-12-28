@@ -10,14 +10,14 @@ const Post = ({posts}) => {
     console.log("slug: ", slug)
     const post = posts.find((post) => post.slug === slug);
     return (
-    <>
+    <div className="singlePost">
 
     <div className="banner"><img src={post.featuredImage.url}></img></div>
 
-    <h1>{post.title}</h1>
-    <div dangerouslySetInnerHTML={{__html:post.content.html}}/>
+    <div className="single-post-title"><h1>{post.title}</h1></div>
+    <div className="text-content" dangerouslySetInnerHTML={{__html:post.content.html}}/>
      
-    </>
+    </div>
 
     );
       

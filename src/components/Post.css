@@ -4,4 +4,26 @@
 
 .banner img {
     height: 100px;
+    display:none;
+}
+
+.text-content {
+    padding-top: 30px;
+    max-width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align:left
+}
+
+.text-content p {
+    line-height:1.3
+}
+
+.text-content p {
+    padding-top:20px
+}
+
+
+.singlePost {
+    margin-top: 30px;
 }

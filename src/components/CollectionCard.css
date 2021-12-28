@@ -30,3 +30,7 @@
    -webkit-box-orient: vertical;
  }
  
+ .single-post-tile h1{
+     
+    padding-top: 30px!important;
+}
