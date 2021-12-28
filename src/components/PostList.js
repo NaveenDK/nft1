@@ -17,7 +17,7 @@ const PostList = ({posts,setSelectedPost}) => {
                     </div>
 
                     </Link>
-             )) })
+             )) }
             
         </div>
     )

@@ -11,3 +11,7 @@
     display:none;
 }
 
+
+.postList a {
+    text-decoration: none;
+}

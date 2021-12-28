@@ -11,8 +11,11 @@ const CollectionCard = ({id,imageSrc, title ,excerpt}) => {
             <div className='post-title'>
                 {title}
             </div>
-            <div className='excerpt'>
-                {excerpt}
+            <div className='excerpt'><p>
+
+            {excerpt}
+            </p>
+                
             </div>
             </div>
         </div>
