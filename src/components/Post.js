@@ -9,7 +9,17 @@ const Post = ({posts}) => {
     const { slug } = useParams();
     console.log("slug: ", slug)
     const post = posts.find((post) => post.slug === slug);
-    return <h1>{post.title}</h1>;
+    return (
+    <>
+
+    <div className="banner"><img src={post.featuredImage.url}></img></div>
+
+    <h1>{post.title}</h1>
+    <div dangerouslySetInnerHTML={{__html:post.content.html}}/>
+     
+    </>
+
+    );
       
     
 }

@@ -40,6 +40,9 @@ function App() {
          {
            url
         }
+        content{
+          html
+        }
        }
      }
    `
