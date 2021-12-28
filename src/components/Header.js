@@ -30,7 +30,7 @@ const Header = () => {
                                 <a>Crypto & NFTS</a>
                         </li>
                 </ul>
-                <i onClick={()=> setOpen(!open)} className="fas fa-bars burger"></i>
+                <i onClick={()=> setOpen(!open)} className={open? 'fas fa-times burger':'fas fa-bars burger'}></i>
 
 
             </nav>
