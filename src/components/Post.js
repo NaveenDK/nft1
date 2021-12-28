@@ -5,6 +5,7 @@ import { useParams } from 'react-router-dom';
 
 
 const Post = ({posts}) => {
+    console.log("posts inside post-component " , posts)
     const { slug } = useParams();
     console.log("slug: ", slug)
     const post = posts.find((post) => post.slug === slug);

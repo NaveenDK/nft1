@@ -5,6 +5,7 @@ import './PostList.css'
 
 
 const PostList = ({posts,setSelectedPost}) => {
+    console.log("posts inside postlist " , posts)
     return (
         <div className='postList'>
             {posts.map(post=>(

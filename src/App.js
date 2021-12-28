@@ -7,7 +7,7 @@ import placeholderImage from './assets/header/featured01.jpg';
 import PostList from './components/PostList';
 import Main from './components/Main';
 import { request } from 'graphql-request';
-import { BrowserRouter as Router,Route,Switch } from 'react-router-dom';
+import { BrowserRouter as Router,Route, Routes} from 'react-router-dom';
 import Post from './components/Post';
 
 
@@ -56,21 +56,14 @@ function App() {
       <div className='app'>
         
       <Header/>
-      
-
-    <Switch>
-      <Route exact path='/'>{
-        posts.length>0 && (<>
-          {/* <Main posts={posts} selectedPost={selectedPost}/>   */}
-          <PostList posts={posts} setSelectedPost={setSelectedPost} />
-          </>
-        )
-
-      } </Route>
-       <Route path='/posts/:slug'> 
-           <Post posts={posts} /> 
-      </Route>
-      </Switch>
+      <Routes>
+      <Route  path='/' element={ posts.length>0 && 
+             <PostList posts={posts} setSelectedPost={setSelectedPost} />
+      } />
+     
+       <Route path='/posts/:slug' element={<Post posts={posts}/>} /> 
+            
+      </Routes>
     </div>
   </Router>
   )
