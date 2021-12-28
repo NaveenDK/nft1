@@ -8,10 +8,10 @@ const PostList = ({posts,setSelectedPost}) => {
     console.log("posts inside postlist " , posts)
     return (
         <div className='postList'>
-            {posts.map(post=>(
+            {posts.map((post,index)=>(
               
               <Link  to={`/posts/${post.slug}`} >
-              <div onClick={()=>setSelectedPost(post.id)}>
+              <div onMouseEnter={()=>setSelectedPost(index)}>
                         <CollectionCard key={post.slug} title={post.title} excerpt={post.excerpt} imageSrc={post.featuredImage.url}/>
 
                     </div>

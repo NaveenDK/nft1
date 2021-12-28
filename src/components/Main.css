@@ -2,10 +2,13 @@
     max-height:50vh;
 }
 
-.mainContent{
-    display:flex;
-    padding-bottom:20px;
-    border-bottom:1px solid #fff;
+
+
+.mainContent {
+    display: flex;
+    padding-bottom: 20px;
+    padding: 20px;
+    border-bottom: 1px solid #fff;
 }
 .title{
     font-size:66px;
@@ -39,4 +42,21 @@ span.postExcerpt {
     display: block;
     text-align: left;
     margin-left: 4px;
+}
+.title {
+    font-size: 66px;
+    font-weight: 800;
+    text-align: left;
+}
+
+@media all and (max-width:768px){
+
+    
+.main {
+    max-height: 50vh;
+    display: none;
+}
+
+
+
 }

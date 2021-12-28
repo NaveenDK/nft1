@@ -61,7 +61,11 @@ function App() {
       <Header/>
       <Routes>
       <Route  path='/' element={ posts.length>0 && 
+      <>
+             <Main posts={posts} selectedPost={selectedPost}/>  
              <PostList posts={posts} setSelectedPost={setSelectedPost} />
+             </>
+
       } />
      
        <Route path='/posts/:slug' element={<Post posts={posts}/>} /> 
