@@ -1,6 +1,6 @@
 import React from 'react'
 import './Footer.css'
-import punkLogo from '../assets/header/LOGO_latest.png'
+import punkLogo from '../assets/header/logo-v3.svg'
 
 const Footer = () => {
     return (

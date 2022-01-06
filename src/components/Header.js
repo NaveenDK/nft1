@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import './Header.scss'
-import punkLogo from '../assets/header/LOGO_latest.png'
+import punkLogo from '../assets/header/logo-v3.svg'
 import searchIcon from   '../assets/header/search.png';
 import themeSwitchIcon from '../assets/header/theme-switch.png'
 import './Switcher.scss';
