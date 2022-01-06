@@ -2,15 +2,17 @@
     padding-top: 64px;
     padding-bottom: 65px;
     background-color: #181919;
+    padding-right: 60px;
+    padding-left: 60px;
 }
 
 .wrapper-1160 {
     width: 100%;
-    max-width: 1230px;
+    
     margin-right: auto;
     margin-left: auto;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 30px;
+    padding-left: 30px;
 }
 
 .footer-hero {

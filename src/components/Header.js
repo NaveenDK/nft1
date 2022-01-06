@@ -15,7 +15,8 @@ const Header = ({isDark,setIsDark}) => {
         <div className="header" >
            
             <nav>
-            
+             
+             
                 <div className="logo">
                 <img src={punkLogo} className='punkLogo' alt="" />
                 </div>
@@ -60,7 +61,7 @@ const Header = ({isDark,setIsDark}) => {
                 </div>
                 </div>
                 
-           
+            
             </nav>
 
  
