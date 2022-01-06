@@ -1,5 +1,6 @@
 import React from 'react'
 import './Footer.css'
+import punkLogo from '../assets/header/neuralogov1.png';
 
 const Footer = () => {
     return (
@@ -9,14 +10,15 @@ const Footer = () => {
                     <div className="footer-contact">
                     <div class="mini-heading-green">NO CREDIT CARD REQUIRED</div>
                     <h2 class="heading-h2-v2">Get a Demo of Avo today!</h2>
-                    FORM GOES HERE
+                   
                     </div>
-                    <img  src="https://assets.website-files.com/5ec440af4659932990a1020c/6126238e144f7970c00d7c57_60f17a27f09c3f9cecf7ef53_footer-avatar.png" loading="lazy" width="281" alt="" className="footer-avatar"></img>
+                    <img src={punkLogo} className='punkLogo' alt="" />
+                    {/* <img 
+                     src="https://assets.website-files.com/5ec440af4659932990a1020c/6126238e144f7970c00d7c57_60f17a27f09c3f9cecf7ef53_footer-avatar.png" loading="lazy" width="281" alt="" className="footer-avatar"></img> */}
                     
             </div>
             <div className="footer-content">
-                <div><img src="https://assets.website-files.com/5ec440af4659932990a1020c/60f17a27f09c3f5c50f7ef15_Logo.svg" 
-                    loading="lazy" alt="" className="footer-logo"/>
+                <div> 
                     <div className="footar-quote">Ship quality insights in an hour, not days or weeks.</div>
                 </div>
                 <div className="footer-grid">

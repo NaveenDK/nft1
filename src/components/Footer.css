@@ -7,7 +7,7 @@
 }
 
 .wrapper-1160 {
-    width: 100%;
+     
     
     margin-right: auto;
     margin-left: auto;
@@ -126,4 +126,16 @@ img{
 a {
     background-color: transparent;
      
+}
+
+
+
+@media all and (max-width:768px){
+.footer-3 {
+    padding-top: 64px;
+    padding-bottom: 65px;
+    background-color: #181919;
+    padding-right: 15px;
+    padding-left: 15px;
+}
 }
