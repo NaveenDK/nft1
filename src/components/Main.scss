@@ -1,0 +1,102 @@
+
+
+@import "../utilities/variables";
+
+.main{
+    max-height:"50vh";
+}
+
+
+
+.mainContent {
+    display: flex;
+    padding-bottom: 20px;
+    padding: 20px;
+   
+}
+.title{
+    font-size:66px;
+    font-weight:800;
+}
+
+.postHighlight{
+    flex:0.25;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.postDetails{
+    display:flex;
+    flex-direction:column;
+    flex:0/75;
+}
+.postContainer {
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+     
+    margin-right: 20px;
+}
+.selectedPost{
+    object-fit: contain;
+    max-width:300px;
+}
+span.postExcerpt {
+    color: rgb(0, 0, 0);
+    display: block;
+    text-align: left;
+    margin-left: 4px;
+ 
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.themeLight span.postExcerpt {
+    color: $color-theme-light;
+    display: block;
+    text-align: left;
+    margin-left: 4px;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.themeDark span.postExcerpt {
+    color: $color-theme-dark;
+    display: block;
+    text-align: left;
+    margin-left: 4px;
+    font-family: 'Libre Franklin', sans-serif;
+}
+.themeDark .title {
+    font-size: 66px;
+    font-weight: 800;
+    text-align: left;
+    font-family: 'Merriweather', serif;
+    color:$color-theme-dark;
+}
+.themeLight .title{
+    font-size: 66px;
+    font-weight: 800;
+    text-align: left;
+    font-family: 'Merriweather', serif;
+    color:$color-theme-light;
+}
+
+@media all and (max-width:768px){
+
+    
+.main {
+    max-height: 50vh;
+    display: none;
+}
+
+
+
+}
+
+.themeDark .main {
+    max-height: "50vh";
+    background: $bg-dark-theme;
+}
+
+.themeLight .main{
+    background:  $bg-light-theme;
+}

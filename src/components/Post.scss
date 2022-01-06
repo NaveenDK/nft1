@@ -1,0 +1,73 @@
+
+
+@import "../utilities/variables";
+
+.banner img {
+    height: 100px;
+    display:none;
+}
+
+.themeDark .text-content {
+    padding-top: 30px;
+    max-width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: left;
+    color: $color-theme-dark;
+}
+
+.themeLight .text-content {
+    padding-top: 30px;
+    max-width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: left;
+    color: $color-theme-light;
+} 
+
+.text-content p {
+    line-height:1.3
+}
+
+.text-content p {
+    padding-top:20px
+}
+
+
+
+.themeDark .singlePost {
+   
+    padding-top: 30px;
+    background: $bg-dark-theme;
+}
+
+.themeLight .singlePost {
+   
+    padding-top: 30px;
+    background: $bg-light-theme;
+}
+.themeDark .single-post-title {
+
+    padding-top: 30px;
+    max-width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: left;
+    color: $color-theme-dark;
+}
+
+.themeLight .single-post-title {
+
+    padding-top: 30px;
+    max-width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: left;
+    color: $color-theme-light;
+}
+
+ .singlePost {
+    padding-top: 30px;
+    padding-bottom:30px;
+    min-height: 400px;
+}

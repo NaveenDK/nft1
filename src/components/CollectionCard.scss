@@ -1,0 +1,75 @@
+
+
+@import "../utilities/variables";
+
+
+.collectionCard{
+    color:white;
+    background-color: #ffffff;
+    border-radius:20px;
+    overflow:hidden;
+    width:300px;
+    height:500px;
+    margin-right:30px;
+   
+}
+
+
+.collectionCard >img{
+    width:100%;
+}
+.post-title{
+    margin-left:4px;
+    text-align:left;
+    font-size:20px;
+    font-weight:900;
+}
+.details{
+    padding:20px;
+}
+ 
+.excerpt {
+    text-align:left;
+    margin-left:4px;
+    color:black;
+    display: -webkit-box;
+   overflow: hidden;
+   -webkit-line-clamp: 2;
+   -webkit-box-orient: vertical;
+ }
+ 
+ .single-post-tile h1{
+     
+    padding-top: 30px!important;
+}
+
+.collectionCard {
+    color: black;
+    background-color: #e5e4e4;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 300px;
+    height: 500px;
+    margin-right: 30px;
+    /* box-shadow: 0 19px 38px rgb(0 0 0 / 30%), 0 15px 12px rgb(0 0 0 / 22%); */
+}
+
+.collectionCard:hover {
+ 
+}
+
+.themeDark.post-title {
+    margin-left: 4px;
+    text-align: left;
+    font-size: 20px;
+    color: $color-theme-dark;
+    font-weight: 900;
+}
+
+.themeLight.post-title{
+    margin-left: 4px;
+    text-align: left;
+    font-size: 20px;
+    color: $color-theme-light;
+    font-weight: 900;
+}

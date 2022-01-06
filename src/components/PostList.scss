@@ -1,0 +1,40 @@
+
+@import "../utilities/variables";
+
+.postList{
+    cursor:pointer;
+    display:flex;
+    overflow:scroll;
+    
+    padding-bottom:20px;
+    padding:20px;
+    
+}
+
+.themeDark .postList{
+    cursor:pointer;
+    display:flex;
+    overflow:scroll;
+    
+    padding-bottom:20px;
+    padding:20px;
+    background:$bg-dark-theme;
+}
+
+.themeLight .postList{
+    cursor:pointer;
+    display:flex;
+    overflow:scroll;
+    
+    padding-bottom:20px;
+    padding:20px;
+    background:$bg-light-theme;
+}
+.postList::-webkit-scrollbar{
+    display:none;
+}
+
+
+.postList a {
+    text-decoration: none;
+}

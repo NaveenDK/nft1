@@ -1,6 +1,6 @@
 import React from 'react'
 import placeholderImage from '../assets/header/featured01.jpg';
-import './CollectionCard.css';
+import './CollectionCard.scss';
 
 
 const CollectionCard = ({id,imageSrc, title ,excerpt}) => {

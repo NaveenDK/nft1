@@ -1,18 +1,32 @@
 
+@import "../utilities/variables";
+
 li{
 list-style-type:none;
 }
 a{
 text-decoration:none;
 }
-nav {
+.themeLight nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     min-height: 10vh;
     padding-left: 30px;
     padding-right: 30px;
-    background: rgb(0, 0, 0);
+    background:  $bg-light-theme;
+
+
+}
+
+.themeDark nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 10vh;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: $bg-dark-theme;
 }
 @media screen and (min-width: 1271px) {
     nav .nav-links{
@@ -33,10 +47,20 @@ nav {
     }    
   }
 
-nav .nav-links a{
+.themeLight nav .nav-links a{
     font-size:18px;
     font-weight: normal;
     cursor:pointer;
+    font-family: 'Merriweather', serif;
+    color:black;
+}
+
+.themeDark nav .nav-links a {
+    font-size: 18px;
+    font-weight: normal;
+    color: white;
+    cursor: pointer;
+    font-family: 'Merriweather', serif;
 }
 
 nav .nav-links a:hover{
@@ -105,7 +129,7 @@ nav .nav-links a:hover{
 }
 .headerItems {
     display: flex;
-    margin-left: auto!Important;
+     
 }
 
 

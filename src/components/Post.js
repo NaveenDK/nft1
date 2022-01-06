@@ -1,5 +1,5 @@
 
-import './Post.css'
+import './Post.scss'
 import React from 'react';
 import { useParams } from 'react-router-dom';
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import './Main.css'
+import './Main.scss'
 import {useState,useEffect} from 'react';
 const Main = ({selectedPost,posts}) => {
 

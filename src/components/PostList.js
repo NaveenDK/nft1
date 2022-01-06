@@ -1,7 +1,7 @@
 import React from 'react'
 import CollectionCard from './CollectionCard'
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import './PostList.css'
+import './PostList.scss'
 
 
 const PostList = ({posts,setSelectedPost}) => {

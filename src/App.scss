@@ -1,0 +1,26 @@
+ 
+
+@import "./utilities/variables";
+
+.themeDark .app{
+  background-color:$bg-dark-theme;
+   
+  min-height:100vh;
+  max-width:100wh;
+ 
+  text-align: center;
+
+}
+
+.punkLogo {
+  Width:200px;
+}
+
+.themeLight .app{
+  background-color:$bg-light-theme;
+  min-height:100vh;
+  max-width:100wh;
+ 
+  text-align: center;
+
+}

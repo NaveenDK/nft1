@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 import Header from './components/Header';
 import {useState,useEffect} from 'react';
 import CollectionCard from './components/CollectionCard';
@@ -9,6 +9,7 @@ import Main from './components/Main';
 import { request } from 'graphql-request';
 import { BrowserRouter as Router,Route, Routes} from 'react-router-dom';
 import Post from './components/Post';
+import Footer from './components/Footer';
 
 
 const postData = [
@@ -23,7 +24,7 @@ function App() {
 
  const [selectedPost,setSelectedPost] = useState(0);
  const [posts, setPosts] = useState([]);
-
+ const [isDark,setIsDark] =useState(false);
 
  useEffect(() => {
    const fetchPosts = async () => {
@@ -54,11 +55,24 @@ function App() {
    fetchPosts();
  }, []);
 
+useEffect(()=>{
+  const currentThemeColor=localStorage.getItem('theme-color');
+  if(currentThemeColor==='theme-dark'){
+    setIsDark(true)
+
+  }
+  else{
+    setIsDark(false)
+  }
+},[])
+
+ 
+
   return (
     <Router>
-      <div className='app'>
+      <div className={`app ${isDark? 'themeDark':'themeLight'}`}>
         
-      <Header/>
+      <Header isDark={isDark} setIsDark={setIsDark}/>
       <Routes>
       <Route  path='/' element={ posts.length>0 && 
       <>
@@ -72,7 +86,9 @@ function App() {
             
       </Routes>
     </div>
+    <Footer/>
   </Router>
+ 
   )
 }
 

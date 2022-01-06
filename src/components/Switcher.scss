@@ -1,0 +1,38 @@
+@import '../utilities/variables';
+
+.themeSwitcherWrap{
+    
+    text-align:right;
+    .themeSwitcherLabel{
+        display:inline-block;
+        cursor:pointer;
+
+
+        .switchPath{
+            width:40px;
+            height:20px;
+            border-radius:10px;
+            transition:all 0.3s ease-in-out;
+            background:#ccc;
+            .switchHandle{
+                background-color: rgb(48, 28, 28);
+                width:20px;
+                height:20px;
+                border-radius:50%;
+                transition:all 0.3s ease-in-out;
+            }
+        }
+        &.active{
+            .switchPath{
+                background-color: rgb(202, 154, 154);
+            }
+            .switchHandle{
+                transform:translateX(20px);
+                background-color:rgb(0, 0, 0);
+            }
+        }
+
+    }
+
+
+}
