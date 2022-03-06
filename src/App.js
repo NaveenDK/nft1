@@ -87,7 +87,7 @@ useEffect(()=>{
       </Routes>
     </div>
     <Footer/>
-  </Router>
+  </Router> 
  
   )
 }

@@ -14,6 +14,7 @@ const Main = ({selectedPost,posts}) => {
 
     return (
         <div className='main'>
+           <div className='mainContentWrapper'>
             <div className='mainContent'>
                 <div className='postHighlight'>
                     <div className='postContainer'>
@@ -37,6 +38,7 @@ const Main = ({selectedPost,posts}) => {
            
           </div>
         </div>
+        </div> 
         </div>
     )
 }

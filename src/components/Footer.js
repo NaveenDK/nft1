@@ -4,7 +4,9 @@ import punkLogo from '../assets/header/logo-v3.svg'
 
 const Footer = () => {
     return (
+
 <footer className="footer-3">
+<div className="footer-wrapper">
         <div className="wrapper-1160">
             <div className="footer-hero">
                     <div className="footer-contact">
@@ -17,6 +19,7 @@ const Footer = () => {
                      src="https://assets.website-files.com/5ec440af4659932990a1020c/6126238e144f7970c00d7c57_60f17a27f09c3f9cecf7ef53_footer-avatar.png" loading="lazy" width="281" alt="" className="footer-avatar"></img> */}
                     
             </div>
+        
             <div className="footer-content">
                 <div> 
                     <div className="footar-quote">Ship quality insights in an hour, not days or weeks.</div>
@@ -28,9 +31,11 @@ const Footer = () => {
                 </div>
 
             </div>
+            
+        </div>
         </div>
 </footer>
-        
+   
         // <div className="main-footer">
         //     <div className="container">
         //          <div className="row">
